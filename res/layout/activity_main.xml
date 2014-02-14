@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/imageSelectionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Image Selection"
+        android:textSize="20dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.60" >
+
+        <TableRow
+            android:id="@+id/parisRow"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:onClick="rowClick" >
+
+			<ImageButton
+                android:id="@+id/imageView1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_column="0"
+                android:gravity="center"
+                android:src="@drawable/paris" />
+            <TextView
+                android:id="@+id/parisLabel"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:text="Paris"
+                android:layout_column="1"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        
+       
+
+        
+    </TableLayout>
+
+</LinearLayout>
